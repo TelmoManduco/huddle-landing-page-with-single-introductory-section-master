@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --purple-700: #674baf;
+    --magenta-400: #e882e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*
+    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    */
+    height: 100vh;
+    background: var(--purple-700) url(images/bg-mobile.svg) no-repeat top center;
+    background-position: cover;
+}
