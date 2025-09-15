@@ -56,7 +56,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-button{
+.btn {
   border: none;
   border-radius: 30px;
   box-shadow: 3px 5px 5px rgb(61, 44, 104);
@@ -67,22 +67,17 @@ button{
   width: 80%;
 }
 
-.landing-text a:hover {
+.landing-text .btn:hover {
     background-color: var(--magenta-400);
     color: white;
 }
 
 .socials {
     display: flex;
-    gap: 1rem;
     justify-content: center;
-    margin-top: 2rem;
+    gap: 1rem;
 }
 
-.socials img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    cursor: pointer;
-    color: white;
+.socials .icon {
+
 }
