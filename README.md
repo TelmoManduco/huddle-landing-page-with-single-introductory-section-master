@@ -13,10 +13,9 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ## 🔗 Links
 
-## 🔗 Links
+- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/huddle-landing-page-with-single-introductory-section-my-solution--u29AZKdB-)  
+- [Live Demo](https://telmomanduco.github.io/huddle-landing-page-with-single-introductory-section-master)
 
-- <a href="https://www.frontendmentor.io/solutions/huddle-landing-page-with-single-introductory-section-my-solution--u29AZKdB-" target="_blank">Frontend Mentor Solution</a>
-- <a href="https://telmomanduco.github.io/huddle-landing-page-with-single-introductory-section-master" target="_blank">Live Demo</a>
 
 ---
 
