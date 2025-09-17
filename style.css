@@ -1,60 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
 :root {
-    --purple-700: #674baf;
-    --magenta-400: #e882e8;
-    --poppins:  "Poppins", sans-serif;
+  --purple-700: #674baf;
+  --magenta-400: #e882e8;
+  --poppins: "Poppins", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    min-height: 100vh;
-    background: var(--purple-700) url("images/bg-mobile.svg") no-repeat left top;
-    background-size: contain;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  min-height: 100vh;
+  background: var(--purple-700) url("images/bg-mobile.svg") no-repeat top center;
+  background-size: contain;
 }
 
 .main {
-    padding: 2rem 1.5rem;
-    margin: 0 auto;
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+  max-width: 375px;
 }
 
 .logo img {
-    width: 120px;    
-    max-width: 100%; 
-    margin-bottom: 2rem; 
+  width: 120px;
+  max-width: 100%;
+  margin-bottom: 2rem;
 }
 
 .landing-img img {
-    width: 100%;
-    margin-bottom: 2rem;
-    display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: block;
 }
 
 .landing-text {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .landing-text h1 {
-    font-family: var(--poppins);
-    font-size: 1.5rem;
-    line-height: 1.3;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  font-family: var(--poppins);
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .landing-text p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -66,63 +67,96 @@ body {
   font-size: 1rem;
   padding: 12px;
   width: 80%;
+  cursor: pointer;
 }
 
 .landing-text .btn:hover {
-    background-color: var(--magenta-400);
-    transition: 0.2s ease-in-out;
-    color: white;
+  background-color: var(--magenta-400);
+  transition: 0.2s ease-in-out;
+  color: white;
 }
 
 .socials {
-    color: white;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.socials i {
-    color: white;
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    padding: 0.5rem;
-    text-align: center;
-}
-
-.socials i:hover{
-  color: var(--magenta-400);
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
   transition: 0.2s ease-in-out;
-  border: 1px solid var(--magenta-400);
 }
+
+.socials a:hover {
+  color: var(--magenta-400);
+  border-color: var(--magenta-400);
+}
+
+/* ========================= */
+/* Desktop (>=768px) layout  */
+/* ========================= */
 
 @media (min-width: 768px) {
-    body {
-        background-image: url(images/bg-desktop.svg);
-        background-size: contain;
-    }
+  body {
+    background: var(--purple-700) url("images/bg-desktop.svg") no-repeat top left;
+    background-size: cover;
+  }
 
-    .main {
-        padding: 3rem 3.5rem;
-    }
+  .main {
+    max-width: 1200px;
+    padding: 3rem;
+  }
 
-    .logo img {
-        width: 200px;    
-    }
-    .landing-section {
-        display: flex;
-        gap: 3rem;
-        
-    }
+  .logo img {
+    width: 200px;
+    margin-bottom: 3rem;
+  }
 
-    .landing-text {
-        text-align: left;
-        width: 31%;
-    }
+  .landing-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
 
-    .landing-text h1 {
-        font-size: 2rem;
-    }
+  .landing-img {
+    flex: 1;
+  }
+
+  .landing-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-text {
+    text-align: left;
+    max-width: 500px;
+  }
+
+  .landing-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing-text p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    width: auto;
+    padding: 0.75rem 3rem;
+  }
+
+  .socials {
+    justify-content: flex-end;
+    margin-top: 3rem;
+  }
 }
